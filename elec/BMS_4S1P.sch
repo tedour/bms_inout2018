@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:BMS_4S1P
-LIBS:BMS_4S1P-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -118,10 +117,6 @@ F 3 "" H 6750 7550 50  0000 C CNN
 	1    6750 7550
 	1    0    0    -1  
 $EndComp
-Text GLabel 6400 5850 2    60   Input ~ 0
-a1
-Text GLabel 6150 6450 2    60   Input ~ 0
-a2
 Text GLabel 8100 3250 0    39   Output ~ 0
 a1
 Text GLabel 8100 3350 0    39   Output ~ 0
@@ -620,15 +615,13 @@ Text GLabel 6150 4850 2    39   Input ~ 0
 b2
 Text GLabel 6900 4600 2    39   Output ~ 0
 b3
-Text GLabel 6600 3400 2    39   Input ~ 0
+Text GLabel 6150 3300 2    39   Input ~ 0
 c2
 Text GLabel 6400 2650 2    39   Input ~ 0
 c1
 Text GLabel 6900 3000 2    39   Output ~ 0
 c3
 Text GLabel 6150 1700 2    39   Input ~ 0
-d2
-Text GLabel 6400 1050 2    39   Input ~ 0
 d2
 Text GLabel 6900 1400 2    39   Output ~ 0
 d3
@@ -1145,4 +1138,12 @@ Wire Wire Line
 	5400 1400 5400 1500
 Wire Wire Line
 	6100 1700 6150 1700
+Wire Wire Line
+	6150 3300 6100 3300
+Text GLabel 6400 1050 2    35   Input ~ 0
+d1
+Text GLabel 6150 6450 2    35   Input ~ 0
+a2
+Text GLabel 6400 5850 2    35   Input ~ 0
+a1
 $EndSCHEMATC
